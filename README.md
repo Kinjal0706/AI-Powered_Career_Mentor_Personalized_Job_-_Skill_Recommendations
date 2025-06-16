@@ -1,171 +1,124 @@
-📄 AI-Powered Career Mentor: Personalized Job & Skill Recommendations
-An intelligent, AI-driven web application that analyzes user resumes and profiles to suggest personalized job roles and required skill recommendations. The system leverages Natural Language Processing (NLP) and Machine Learning (ML) techniques to guide users in enhancing their career prospects.
+# 📌 Smart AI Resume Analyzer & Career Mentor
 
-📌 Table of Contents
-About the Project
+An AI-powered resume analyzer and career mentor tool that evaluates uploaded resumes, scores them using ATS metrics, and provides personalized job and skill recommendations based on extracted information.
 
-Features
+---
 
-Project Architecture
+## 📑 Table of Contents
 
-Tech Stack
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Installation & Setup
+---
 
-Usage
+## 📖 About
 
-Results
+This is an AI-driven application designed to enhance career opportunities by analyzing resumes against ATS (Applicant Tracking System) standards. It scores resumes based on multiple key factors and recommends suitable job roles and skills to improve career profiles.
 
-Future Enhancements
+---
 
-Contributing
+## ✨ Features
 
-License
+- 📄 ATS-compliant resume analysis
+- 📊 Resume scoring based on key metrics
+- 🧭 Personalized job recommendations
+- 🎯 Skill gap analysis and suggestions
+- 📈 Interactive dashboard for results visualization
 
-📖 About the Project
-The AI-Powered Career Mentor is designed to assist job seekers by:
+---
 
-Analyzing resumes using NLP
+## 🛠️ Tech Stack
 
-Matching user skills and experiences with job market demands
+- **Frontend:** HTML, CSS, Bootstrap
+- **Backend:** Python (Django/Flask)
+- **Machine Learning:** Scikit-learn, Pandas, Numpy
+- **Database:** SQLite/MySQL
+- **APIs/Tools:** OpenAI API (optional)
 
-Recommending suitable job roles and essential skills to acquire
+---
 
-Providing ATS (Applicant Tracking System) resume scores to improve job application visibility
+## 🚀 Installation
 
-✨ Features
-📄 Resume Parsing & Analysis
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kinjal0706/AI-Powered_Career_Mentor_Personalized_Job_-_Skill_Recommendations.git
+   cd Smart-AI-Resume-Analyzer-main
+   ```
 
-🧑‍💼 Personalized Job Role Recommendations
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # For Mac/Linux
+   venv\Scripts\activate     # For Windows
+   ```
 
-📚 Skill Gap Analysis & Recommendations
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-📊 ATS Resume Score Generation
+4. Run the application:
+   ```bash
+   python manage.py runserver
+   ```
 
-📈 User-Friendly Dashboard Interface
+---
 
-🔍 Search & Filter for Desired Roles
+## 📖 Usage
 
-📤 Upload Resume (PDF/Docx)
+- Upload your resume (in PDF format)
+- View ATS score and feedback
+- Check job and skill recommendations based on resume analysis
 
-📑 Detailed Job & Skill Report Generation
+---
 
-🖥️ Project Architecture
-pgsql
-Copy
-Edit
-+---------------------+
-|  User Uploads Resume |
-+---------------------+
-            |
-            v
-  +------------------+
-  |  Resume Parser &  |
-  |  Text Preprocessor|
-  +------------------+
-            |
-            v
-  +--------------------------+
-  |   Skill Extraction & NLP  |
-  +--------------------------+
-            |
-            v
-  +--------------------------+
-  | ML Model: Job Role Mapper |
-  +--------------------------+
-            |
-            v
-  +----------------------------+
-  | ATS Score Calculator & UI  |
-  +----------------------------+
-🛠️ Tech Stack
-Backend: Python, Flask
+## 📸 Screenshots
 
-Frontend: HTML, CSS, Bootstrap
+| Home Page | Resume Upload | Results Dashboard |
+|:------------:|:----------------|:-------------------|
+| ![Home](screenshots/home.png) | ![Upload](screenshots/upload.png) | ![Results](screenshots/results.png) |
 
-ML/NLP Libraries: Pandas, NumPy, scikit-learn, SpaCy, PyPDF2
+---
 
-Database: SQLite
+## 🤝 Contributing
 
-Deployment: Localhost / Render / Heroku (as applicable)
+Contributions are welcome!  
 
-🛠️ Installation & Setup
-Clone the repository
+1. Fork the repository
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes
+4. Commit your changes:
+   ```bash
+   git commit -m "Added feature X"
+   ```
+5. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+6. Open a pull request
 
-bash
-Copy
-Edit
-git clone https://github.com/Kinjal0706/AI-Powered_Career_Mentor_Personalized_Job_-_Skill_Recommendations.git
-cd AI-Powered_Career_Mentor_Personalized_Job_-_Skill_Recommendations
-Create a virtual environment and activate it
+---
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-Install the required dependencies
+## 📜 License
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the application
+This project is licensed under the [MIT License](LICENSE).
 
-bash
-Copy
-Edit
-python app.py
-Open your browser
+---
 
-arduino
-Copy
-Edit
-http://localhost:5000
-🚀 Usage
-Upload your resume (PDF/Docx format)
+## 📧 Contact
 
-View ATS score and resume analysis
+**Kinjal**  
+[GitHub Profile](https://github.com/Kinjal0706)  
+kinjugoaswami@gmail.com
 
-Get recommended job roles and required skills
-
-Improve your profile and apply confidently!
-
-📊 Results
-ATS Score Distribution
-Resumes were scored and categorized:
-
-ATS Score Range	Number of Resumes
-90–100	2
-80–89	4
-70–79	3
-Below 70	1
-
-Skill Recommendations: Based on gaps identified between resume skills and job role requirements.
-
-📈 Future Enhancements
-Integrate real-time job listings via external APIs (e.g., LinkedIn, Indeed)
-
-Implement user authentication and profile management
-
-Enhance ATS scoring with industry benchmarks
-
-Add multilingual resume support
-
-Deploy the system to cloud platforms (Render/Heroku/AWS)
-
-🤝 Contributing
-Contributions are welcome! Follow these steps:
-
-Fork the project
-
-Create your feature branch git checkout -b feature/YourFeature
-
-Commit your changes git commit -m 'Add SomeFeature'
-
-Push to the branch git push origin feature/YourFeature
-
-Open a pull request
-
-📄 License
-This project is open source and available under the MIT License.
+---
